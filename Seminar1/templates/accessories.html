@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %} Аксесуары {% endblock %}
+{% block content %}
+<h2 align="center">Аксесуары</h2>
+{% for cat in list %}
+<div class="card" style="width: 18rem;">
+    {% if cat['foto'] %}
+    <img class="card-img-top" src={{cloth.photo}} alt="Card image cap">
+    {% endif %}
+    <div class="card-body">
+        <h5 class="card-title">{{cat['name']}}</h5>
+        <p class="card-text">Цена: {{cat['price']}} руб.</p>
+        <a href="#" class="btn btn-primary">Купить</a>
+
+    </div>
+    <br>
+</div>
+{%endfor%}
+
+{% endblock %}
