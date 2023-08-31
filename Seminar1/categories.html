@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Категории
+{% endblock %}
+
+{% block content %}
+{% for cat in categories_list %}
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+                <h3>{{cat}}</h3>
+    </div>
+</div>
+{%endfor%}
+{% endblock %}
