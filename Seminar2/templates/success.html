@@ -1,0 +1,13 @@
+{% extends 'form.html' %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+<p>Добро пожаловать, ваш логин: {{login}}!
+  Ваша почта: {{email}}</p>
+<form class="form_auth_style" action="#" method="post">
+    <button type="submit" name="back" value="back">Выйти</button>
+</form>
+{% endblock %}
