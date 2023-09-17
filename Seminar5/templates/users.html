@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+<table style="border-collapse: collapse">
+    <tr>
+        <td style="border: 1px solid black; padding: 8px">User ID</td>
+        <td style="border: 1px solid black; padding: 8px">Name</td>
+        <td style="border: 1px solid black; padding: 8px">Email</td>
+    </tr>
+{% for user in users %}
+    <tr>
+        <td style="border: 1px solid black; padding: 8px">{{ user.id }}</td>
+        <td style="border: 1px solid black; padding: 8px">{{ user.name }}</td>
+        <td style="border: 1px solid black; padding: 8px">{{ user.email }}</td>
+    </tr>
+{% endfor %}
+</table>
+<hr>
+<a href="/new_user/">Создать пользователя</a>
+</body>
+</html>
